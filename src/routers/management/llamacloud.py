@@ -1,7 +1,5 @@
-from fastapi import APIRouter, UploadFile, Depends
+from fastapi import APIRouter, Depends
 from fastapi.responses import JSONResponse
-from src.models.file import File
-from src.controllers.files import FileHandler, UnsupportedFileExtensionError
 from src.models.llamacloud_config import LlamaCloudConfig
 from src.controllers.env_configs import EnvConfigManager
 
